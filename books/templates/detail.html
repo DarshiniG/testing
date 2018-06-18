@@ -1,0 +1,11 @@
+<h1>Detail Page</h1>
+<p>you selected id: {{ id }}</p>
+<div>
+	<h4>Title: {{ book.title }}</h4>
+	<p>Summary: {{ book.summary }}</p>
+	<p>Stars: {{ book.stars }}</p>
+	<p>Cover URL: {{ book.cover }}</p>
+	<img ng-src= {{book.cover}} />
+</div>
+<p>{{ message }}</p>
+<p><button  ng-click="addToFavourites(id, book.title)">Add to Favourites</button></p>
